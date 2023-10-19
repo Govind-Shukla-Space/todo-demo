@@ -1,17 +1,19 @@
-import './NavBar.css';
+import './NavBar.css'
+import './Home.css'
 import React from 'react'
 
 function NavBar() {
-  const name="PSIT";
-  const clickHandler=()=>{
-    console.log("button pressed");
+  const name = "PSIT";
+  const clickHandler = () => {
+    console.log('button clicked');
   }
-  return (<>
-    <p>This is "{name}"</p>
-    <p>this is in console {console.log("Hello")}</p>
-    <button onClick={clickHandler}>Click me</button>
+  return (
+    <>
+       <h1>this is {name} from NavBar.jsx</h1>
+       <h2>this is {console.log('hello')} from NavBar.jsx</h2>
+       <button onClick={clickHandler}>click me</button>
     </>
   )
 }
 
-export  default NavBar;
+export default NavBar
