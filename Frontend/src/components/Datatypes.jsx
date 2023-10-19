@@ -20,7 +20,7 @@ function Datatypes() {
         { boolVar ? <div>it is true</div> : <p>it is false</p> }
         <a href={linkVar}>goto PSIT home page</a>
         <p>{Math.random()}</p>
-        <h1>{listVar}</h1>
+        <h1>{listVar},{jsonVar}</h1>
         {/*
         <p>
         { jsonVar }
@@ -41,7 +41,7 @@ function Datatypes() {
        </h1>
        {jsonArrayVar.map((jsonVar) => <div>
                                             <h1>{jsonVar.name} {jsonVar.class}</h1>
-                                            <img src={jsonVar.imgUrl}/>
+                                            <img src={jsonArrayVar.imgUrl} alt=''/>
                                       </div>)}
        
 
@@ -49,4 +49,4 @@ function Datatypes() {
   )
 }
 
-export default Datatypes
+export default Datatypes;
