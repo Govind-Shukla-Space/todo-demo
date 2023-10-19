@@ -20,13 +20,9 @@ function Datatypes() {
         { boolVar ? <div>it is true</div> : <p>it is false</p> }
         <a href={linkVar}>goto PSIT home page</a>
         <p>{Math.random()}</p>
-        <h1>{listVar},{jsonVar}</h1>
-        {/*
-        <p>
-        { jsonVar }
-        </p>
-        */}
-        {/*<h1>{jsonVar.name} {jsonVar.class}</h1> */}
+        <h1>{listVar}</h1>
+       
+        <h1>{jsonVar.name} {jsonVar.class}</h1>
 
        {/* <p>{jsonArrayVar}</p> */}
 
@@ -39,10 +35,9 @@ function Datatypes() {
        {console.log(result2)}
        {console.log(result3)}
        </h1>
-       {jsonArrayVar.map((jsonVar) => <div>
-                                            <h1>{jsonVar.name} {jsonVar.class}</h1>
-                                            {/* <img src={jsonArrayVar.imgUrl} alt=''/> */}
-                                      </div>)}
+       { jsonArrayVar.map((jsonVar) => <div><h1>{jsonVar.name} {jsonVar.class}</h1>
+                                            <img src={jsonVar.imgUrl} alt=""/>
+                                      </div>)} 
        
 
     </div>
