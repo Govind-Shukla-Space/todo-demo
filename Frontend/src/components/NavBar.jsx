@@ -1,6 +1,6 @@
-import './NavBar.css'
-import './Home.css'
-import React from 'react'
+import './NavBar.css';
+import './Home.css';
+import React from 'react';
 
 function NavBar() {
   const name = "PSIT";
@@ -16,4 +16,4 @@ function NavBar() {
   )
 }
 
-export default NavBar
+export default NavBar;
