@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <Datatypes/>
-      <p> this is what App.jsx returns! name {name}</p>
+      <p> This is what App.jsx will returns! name {name}</p>
     </div>
   );
 }
