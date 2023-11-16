@@ -1,0 +1,5 @@
+# to build rest apis 
+fastapi==0.103.2
+
+# server where our app is deployed
+uvicorn==0.23.2
