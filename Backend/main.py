@@ -5,10 +5,12 @@ app = FastAPI()
 app.include_router(todos.router)
 app.include_router(auth.router)
 
-
+def sum(a,b):
+    return a+b
 @app.get('/')
 def greet():
-    return "3rd year elite intro to fastapi"
+    return sum(2,3)
+    # return "3rd year elite intro to fastapi"
 
 
 @app.get('/')
